@@ -17,17 +17,22 @@ a {
 
 .container {
   max-width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  /*padding: 180px 0 100px 0;*/
   background-size: cover;
   color: white;
   text-align: center;
+  animation-name: example;
+  animation-duration: 10s;
+  /*max-width: 37.5rem;*/
+  height:780px;
 }
+
 
 .top-wrapper h1 {
   opacity: 0.7;
@@ -51,8 +56,13 @@ a {
 }
 
 .signup {
-  background-color: #239b76;
+  background-color: #3399ff;
+  color:#fff !important;
+  opacity: 0.8;
+  border-radius: 15px;
+  line-height:32px;
 }
+
 
 .facebook {
   background-color: #3b5998;
@@ -64,141 +74,305 @@ a {
 }
 
 .btn {
-  padding: 12px 24px;
+  padding: 3px 24px;
   color: white;
   display: inline-block;
   opacity: 0.8;
-  border-radius: 4px;
+  border-radius: 10px;
   text-align: center;
 }
 
-.btn:hover {
+/*.btn:hover {
   opacity: 1;
-}
+}*/
 
 .fa {
   margin-right: 5px;
 }
 
 header {
-  height: 65px;
+  height: 70px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-color: white;
   position :fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 124px;
-  margin-top: 20px;
+  width: 70px;
 }
 
 .header-left {
   float: left;
 }
 
+.header-center{
+  display: inline-block;
+  margin-left:10px;
+}
+
 .header-right {
   float: right;
   margin-right: -25px;
+  margin-top:15px;
+  line-height:32px;
 }
 
 .header-right a {
-  line-height: 65px;
+  /*line-height: 65px;*/
   padding: 0 25px;
-  color: white;
+  color: #a6a6a6;
   display: block;
   float: left;
   transition: all 0.5s;
 }
 
 .header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  color: #ff9980;
 }
 
-.menu-icon{
+.home{
+	color: #ff9980 !important;
+}
+
+/* Tambahkan CSS untuk menu-icon */
+.menu-icon {
   color: white;
   float: right;
   font-size: 25px;
   padding: 21px 0;
-  display: none;
+  /* Gantikan property display ke none */
+  display:none;
+}
+adding-bottom: 20px;
 }
 
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+.space{
+padding:20px 0;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
 }
 
-.heading h2 {
-  font-weight: normal;
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
 }
 
-.lesson {
-  float: left;
-  width: 25%;
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
 }
 
-.lesson-icon {
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
   position: relative;
+  padding-top: 40%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
 }
 
-.lesson-icon p {
+.carousel__viewport {
   position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
+.carousel__slide {
   position: relative;
-  top: 7px;
-  box-shadow: none;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: #f99;
+  counter-increment: item;
 }
 
-footer img {
-  width: 125px;
+.carousel__slide:nth-child(even) {
+  background-color: #99f;
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
 }
 
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  opacity:0.7;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 20%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+  opacity:0.5;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: 0rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: 0rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: #333;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
