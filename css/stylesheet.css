@@ -473,16 +473,48 @@ li {
   float: right;
 }
 
-footer img {
+/* footer */
+
+footer {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
   width: 70px;
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.footer-left {
+  float: left;
 }
 
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+.footer-center {
+  display: inline-block;
+  margin-left: 10px;
+  margin-left: 10px;
+  color: #002db3;
+}
+
+.footer-right {
+  float: right;
+  margin-right: -25px;
+  margin-top: 15px;
+  line-height: 32px;
+}
+
+.footer-right a {
+  /*line-height: 65px;*/
+  padding: 0 25px;
+  color: #a6a6a6;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.footer-right a:hover {
+  color: #002db3;
 }
