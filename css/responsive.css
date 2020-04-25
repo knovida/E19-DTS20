@@ -8,11 +8,20 @@
     .heading h2 {
         font-size: 20px;
     }
+
+    .lesson2 {
+        width: 50%;
+        margin-bottom: 50px;
+    }
 }
 
 /* Untuk Smartphone */
 @media all and (max-width: 670px) {
     .lesson {
+        width: 100%;
+    }
+
+    .lesson2 {
         width: 100%;
     }
 }

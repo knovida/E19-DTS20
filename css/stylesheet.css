@@ -3,7 +3,8 @@
 }
 
 body {
-  margin: 0;
+  margin:0;
+  padding:0;
   font-family: "Lucida Grande";
 }
 
@@ -394,8 +395,10 @@ li {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
+/* extra bagian 1 igg */
+
 .lesson-wrapper {
-  padding-bottom: 80px;
+  padding-bottom: 245px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #f7f7f7;
@@ -403,7 +406,7 @@ li {
 }
 
 .heading {
-  padding-top: 80px;
+  padding-top: 10px;
   padding-bottom: 50px;
   color: #5f5d60;
 }
@@ -421,17 +424,43 @@ li {
   position: relative;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
-}
-
 .text-contents {
   width: 80%;
   display: inline-block;
   margin-top: 15px;
   font-size: 15px;
   color: #b3aeb5;
+}
+
+/* extra bagian 2 igg */
+
+.iggextrabagian2 {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  
+}
+
+.box {
+  display: inline-block;
+  width: 25%;
+}
+
+.imbauan {
+  font-size: 40px;
+  text-align: left;
+  color: #1e1d1f;
+  margin-right: 50px;
+}
+
+.gambardokter {
+
+}
+.penjelasan {
+  width:585px;
+  font-size: 20px;
+  background-color: #f80c0c;
 }
