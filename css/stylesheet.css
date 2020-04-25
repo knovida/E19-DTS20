@@ -109,10 +109,9 @@ header {
 
 .header-center {
   display: inline-block;
-  <<<<<<< HEAD margin-left: 10px;
-  =======margin-left: 10px;
+  margin-left: 10px;
+  margin-left: 10px;
   color: #002db3;
-  >>>>>>>e84cfc8fe074f74d36a65ed1207d2915ced79db3
 }
 
 .header-right {
