@@ -86,8 +86,8 @@ a {
   opacity: 1;
 }*/
 
-.fa {
-  margin-right: 5px;
+.arrow {
+  margin-left: 8px;
 }
 
 header {
@@ -129,11 +129,12 @@ header {
 }
 
 .header-right a:hover {
-  color: #ff9980;
+  color: #f44336;
 }
 
 .home{
-	color: #ff9980 !important;
+	color: #f44336 !important;
+	border-bottom: 2px solid #f44336!important;
 }
 
 /* Tambahkan CSS untuk menu-icon */
@@ -144,8 +145,6 @@ header {
   padding: 21px 0;
   /* Gantikan property display ke none */
   display:none;
-}
-adding-bottom: 20px;
 }
 
 .space{
