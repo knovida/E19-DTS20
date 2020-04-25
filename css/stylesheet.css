@@ -86,8 +86,8 @@ a {
   opacity: 1;
 }*/
 
-.fa {
-  margin-right: 5px;
+.arrow {
+  margin-left: 8px;
 }
 
 header {
@@ -109,7 +109,10 @@ header {
 
 .header-center {
   display: inline-block;
-  margin-left: 10px;
+  <<<<<<< HEAD margin-left: 10px;
+  =======margin-left: 10px;
+  color: #002db3;
+  >>>>>>>e84cfc8fe074f74d36a65ed1207d2915ced79db3
 }
 
 .header-right {
@@ -129,11 +132,16 @@ header {
 }
 
 .header-right a:hover {
-  color: #ff9980;
+  color: #002db3;
 }
 
 .home {
   color: #ff9980 !important;
+}
+
+.home {
+  color: #002db3 !important;
+  border-bottom: 2px solid #002db3 !important;
 }
 
 /* Tambahkan CSS untuk menu-icon */
@@ -143,6 +151,7 @@ header {
   font-size: 25px;
   padding: 21px 0;
   /* Gantikan property display ke none */
+  display: none;
   display: none;
 }
 
@@ -384,4 +393,46 @@ li {
 
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
 }
