@@ -13,6 +13,12 @@
         width: 50%;
         margin-bottom: 50px;
     }
+
+    .imbauan {
+        font-size: 10px;
+        text-align: center;
+        color: #7714da;
+    }
 }
 
 /* Untuk Smartphone */
@@ -23,5 +29,11 @@
 
     .lesson2 {
         width: 100%;
+    }
+
+    .imbauan {
+        font-size: 20px;
+        text-align: center;
+        color: #26cc4f;
     }
 }
