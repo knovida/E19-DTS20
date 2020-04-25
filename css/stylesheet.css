@@ -490,12 +490,21 @@ footer {
 
 .footer-left {
   float: left;
+  margin-right: -25px;
+  margin-top: 15px;
+  line-height: 32px;
 }
 
-.footer-center {
-  display: inline-block;
-  margin-left: 10px;
-  margin-left: 10px;
+.footer-left a {
+  /*line-height: 65px;*/
+  padding: 0 25px;
+  color: #a6a6a6;
+  display: block;
+  float: right;
+  transition: all 0.5s;
+}
+
+.footer-left a:hover {
   color: #002db3;
 }
 
@@ -504,17 +513,4 @@ footer {
   margin-right: -25px;
   margin-top: 15px;
   line-height: 32px;
-}
-
-.footer-right a {
-  /*line-height: 65px;*/
-  padding: 0 25px;
-  color: #a6a6a6;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.footer-right a:hover {
-  color: #002db3;
 }
