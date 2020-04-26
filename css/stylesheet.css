@@ -80,14 +80,15 @@ a {
 header {
   height: 70px;
   width: 100%;
-  background-color: white;
+  background-color: #212529;
   position: fixed;
   top: 0;
   z-index: 10;
 }
 
 .logo {
-  width: 70px;
+  width: 45px;
+  height: 45px;
 }
 
 .header-left {
