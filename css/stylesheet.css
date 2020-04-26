@@ -395,6 +395,75 @@ li {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
+/* Tambahkan bagian extra wrapper (firghali) di sini */
+  * {
+  box-sizing: border-box;
+}
+
+.extra-wrapper {
+  font-family: "Lucida Grande";
+  font-size: 15px;
+  width: 1172px;
+  height: 350px;
+  padding: 30px;
+}
+
+.extra-wrapper h1 {
+  font-size: 25px;
+  font-family: georgia;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.container-left {
+  width: 650;
+  height: 350;
+  float: left;
+  padding: 10px;
+}
+
+.container-left p {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.selected {
+  padding-top: 20px;
+}
+
+.heading h2 {
+  font-size: 20;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  color: #2b5995;
+}
+
+.container-right {
+  width: 435;
+  height: 350;
+  padding-top: 20px;
+  float: right;
+  text-align: center;
+  background-color: #2b5995;
+  border-radius: 7px;
+  color: white;
+}
+
+.heading-icon {
+  float: right;
+  width: 145px;
+  height: 150px;
+}
+.heading-icon img {
+  height: 60px;
+  width: 60px;
+  margin: 10px 0;
+}
+
+.selection {
+  padding: 40px;
+}
+/* Tambahkan bagian extra wrapper (firghali) di atas */
 /* extra bagian 1 igg */
 
 .lesson-wrapper {
