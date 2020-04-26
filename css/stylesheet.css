@@ -493,6 +493,14 @@ li {
   position: relative;
 }
 
+.lesson-icon img{
+  height: 250px;
+}
+
+.txt-contents{
+  padding-bottom: 30px;
+}
+
 .text-contents {
   width: 80%;
   display: inline-block;
