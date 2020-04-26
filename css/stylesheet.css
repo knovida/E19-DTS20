@@ -64,8 +64,6 @@ a {
   line-height: 32px;
 }
 
-}
-
 .btn {
   padding: 3px 24px;
   color: white;
@@ -74,10 +72,6 @@ a {
   border-radius: 10px;
   text-align: center;
 }
-
-/*.btn:hover {
-  opacity: 1;
-}*/
 
 .arrow {
   margin-left: 8px;
@@ -112,6 +106,7 @@ header {
   margin-right: -25px;
   margin-top: 15px;
   line-height: 32px;
+  font-family: 'Montserrat'
 }
 
 .header-right a {
