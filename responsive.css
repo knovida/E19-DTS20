@@ -43,7 +43,7 @@
     width: 100%;
   }
 
-  .facebook {
+  .hotline {
     margin-bottom: 10px;
   }
 
@@ -58,7 +58,7 @@
 
   /* Tambahkan CSS untuk menu-icon */
   .menu-icon {
-    display: block;
+    display: block !important;
   }
 
   .top-wrapper h1 {
